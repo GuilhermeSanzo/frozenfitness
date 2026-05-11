@@ -1,0 +1,117 @@
+/*
+
+CSS SOBRE NOS
+
+*/
+
+@media only screen and (max-width:500px) {
+
+body{
+	background-color: #f4f4f4;
+}
+
+/*
+ESTRUTURA
+DO
+CONTEUDO
+*/
+
+.esp_conteudo {
+	clear: both;
+	width: 100%;
+	height: auto;
+	background-color: #f4f4f4;
+}
+
+.conteudo {
+	width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 10% 0;
+}
+
+/*
+ESTRUTURA
+DESCRIÇÃO
+SOBRE NÓS
+*/
+
+
+.box_title_e_subtitle{
+	width:100%;
+	height: auto;
+	margin: 0 auto;
+	margin-bottom: 10%;
+}
+
+.title{
+	width: 100%;
+	font-size: 2em;
+	color: #8f0c0c;
+	text-align: center;
+}
+
+.subititle{
+	width: 100%;
+	font-size: 1.4em;
+	color: #000000;
+	text-align: center;
+}
+
+.box_conteudo_sobre{
+	clear: both;
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 5%;
+	font-size: 1em;
+}
+
+/*
+ESTRUTURA
+DO
+BANNER
+*/
+
+.esp_banner{
+	width: 100%;
+	height: auto;
+	padding-bottom: 49%;
+	display: block;
+	float: left;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-image: url('../../img/banner_sobre_nos.png');
+	position: relative;
+	outline: 1px solid #888888;
+	margin-bottom: 10%;
+}
+
+/*
+SEGUNDA
+ESTRUTURA
+SOBRE NOS
+*/
+
+.second{
+	clear: both;
+  margin: 5% 0;
+  font-size: 2em;
+}
+
+.box_mapa_empresa{
+	width: 96%;
+  height: auto;
+  padding-bottom: 45%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0px 2px 24px 0px rgba(48, 50, 50, 0.78);
+  -moz-box-shadow: 0px 2px 24px 0px rgba(48, 50, 50, 0.78);
+  box-shadow: 0px 2px 24px 0px rgba(48, 50, 50, 0.78);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../../img/mapa_grande.png');
+}
+
+}

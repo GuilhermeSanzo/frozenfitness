@@ -1,0 +1,16 @@
+
+//Pegando efeito de troca do Select
+$(document).on('change',".select_promocao",function (e) {
+
+	var prato_id;
+	var nome_prato;
+	var nome_promocao;
+	var promocao_id;
+
+	prato_id = $(this).attr("prato_id");
+	nome_prato = $(this).attr("nome_prato");
+	nome_promocao = $(this+"option:selected").text();
+
+
+	alert(nome_promocao);
+});

@@ -1,0 +1,576 @@
+/*
+
+CSS do início
+
+*/
+@media only screen and (min-width: 500px) {
+
+a{
+	text-decoration: none;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: verdana;
+}
+
+body {
+	background-color: #f4f4f4;
+}
+
+
+.link_menu_lateral{
+	color: #000;
+	text-decoration: none;
+}
+
+.esp_banner h1 {
+	font-size: 5em;
+	color: #fff;
+	text-shadow: 2px 2px #000;
+	position: relative;
+	top: 80%;
+}
+
+.img_banner {
+	width: 1900px;
+	height: 800px;
+}
+
+.esp_logo_menu_login{
+	width: 100%;
+	height: 180px;
+	float: left;
+}
+.box_logo_menu_login{
+	width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	/* Item para sobrepor o slide */
+	z-index: 100;
+}
+
+.box_logo{
+	margin-left: 20px;
+	margin-top: 10px;
+	width: 80px;
+	height: 80px;
+	float: left;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url('../img/logo.png');
+}
+
+.box_menu{
+	width: 870px;
+	height: 100px;
+	float: left;
+	margin-left: 20px;
+	border-radius:0 0 20px 20px;
+	background-color: #8d0809;
+	color: #fff;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a90329+0,8f0222+44,6d0019+100;Brown+Red+3D */
+	background: #a90329; /* Old browsers */
+	background: -moz-linear-gradient(top,  #a90329 0%, #8f0222 44%, #6d0019 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+	position: relative;
+	z-index: 101;
+}
+
+.box_item_menu{
+	padding: 0px 8px;
+	height: 100%;
+	float: left;
+	margin-left: 10px;
+	line-height: 100px;
+	text-align: center;
+
+}
+
+#menu_dropdown {
+	display: none;
+}
+
+.box_item_menu_estilo {
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.box_action_menu_gradient{
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 20px;
+	border-radius: 20px;
+	cursor: pointer;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#75d273+-1,25b13c+100 */
+	background: #75d273; /* Old browsers */
+	background: -moz-linear-gradient(top,  #75d273 -1%, #25b13c 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #75d273 -1%,#25b13c 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #75d273 -1%,#25b13c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75d273', endColorstr='#25b13c',GradientType=0 ); /* IE6-9 */
+}
+
+.box_action_menu_gradient:last-child {
+	display: none;
+}
+
+#box_open_menu {
+	display: none;
+}
+
+.box_action_menu{
+	width: 60px;
+	height: 60px;
+	float: left;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 60%;
+}
+
+/* Caixa do span */
+.box_action_menu_borda  {
+    width: 30px;
+    height: 30px;
+    background: #fb5555;
+    border-radius: 100%;
+    float: right;
+    position: relative;
+    left: 25%;
+    top: -10%;
+}
+
+.box_action_menu_borda p {
+	text-align: center;
+	color: #fff;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#barra_busca{
+	background-image: url(../img/lupa_icon.svg);
+}
+
+#carrinho{
+	background-image: url(../img/cart.svg);
+}
+
+#open_menu {
+	display: none;
+}
+
+.box_faca_sua_dieta{
+	position: absolute;
+	top:70px;
+	right: 210px;
+	width: 160px;
+	height: 90px;
+	z-index: 99;
+	border-radius:0 0 20px 20px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#59bd6e+0,40ac65+100 */
+	background: #59bd6e; /* Old browsers */
+	background: -moz-linear-gradient(top,  #59bd6e 0%, #40ac65 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #59bd6e 0%,#40ac65 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #59bd6e 0%,#40ac65 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59bd6e', endColorstr='#40ac65',GradientType=0 ); /* IE6-9 */
+	cursor: pointer;
+}
+
+.faca_sua_dieta{
+	left: 15px;
+	width: 100px;
+	height: 40px;
+	position: absolute;
+	bottom: 10px;
+	color: white;
+	font-size: 16px;
+}
+
+.box_icon_mais{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	color: white;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url('../img/add_icon.svg');
+}
+
+.box_login{
+	width: 180px;
+	height: 100%;
+	float: left;
+	margin-left: 15px;
+}
+
+.box_foto_ola{
+	width: 180px;
+	height: 40px;
+	margin: 0 auto;
+	margin-top: 5px;
+}
+
+.box_foto{
+	width: 40px;
+	height: 100%;
+	float: left;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url('../img/img_user.png');
+}
+
+.img_box_foto {
+	width: 40px;
+	height: 100%;
+	float: left;
+	border: 1px solid #888888;
+	border-radius: 50%;
+	background-color: #fff;
+}
+
+.ola{
+	width: 118px;
+	height: 100%;
+	float: left;
+	line-height: 40px;
+	margin-left: 10px;
+	color: white;
+	text-shadow: 2px 1px #888888;
+	font-size: 18px;
+}
+
+/* Caixa para quem vai fazer login */
+.box_login_cadastrar{
+	width: 180px;
+	margin-top: 10px;
+}
+
+/* Caixa para quem está logado */
+.box_login_logado {
+	width: 180px;
+	margin-top: 10px;
+}
+
+.item_login{
+	width: 100%;
+	height: 23px;
+	margin-bottom: 3px;
+}
+
+.texto_login{
+	width: 160px;
+	height: 100%;
+	border:1px solid #5e5e5e;
+	border-radius: 20px;
+	padding-left: 20px;
+	font-size: 10pt;
+	line-height: 23px;
+}
+
+.botao_login{
+	margin-top: 5px;
+	width: 180px;
+	height: 100%;
+	border-radius: 20px;
+	font-size: 10pt;
+	line-height: 23px;
+	cursor: pointer;
+	background: #59bd6e; /* Old browsers */
+	background: -moz-linear-gradient(top,  #59bd6e 0%, #40ac65 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #59bd6e 0%,#40ac65 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #59bd6e 0%,#40ac65 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59bd6e', endColorstr='#40ac65',GradientType=0 ); /* IE6-9 */
+	color: white;
+	border:1px solid #59bd6e;
+	text-align: center;
+}
+
+#fazer_login{
+
+}
+
+#cadastrar{
+
+}
+
+.esp_rodape{
+	width: 100%;
+	height: 320px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a90329+0,8f0222+44,6d0019+100;Brown+Red+3D */
+	background: #a90329; /* Old browsers */
+	background: -moz-linear-gradient(top,  #a90329 0%, #8f0222 44%, #6d0019 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+	float: left;
+}
+
+.box_localizacao_frase_cartoes{
+	width: 1210px;
+	height: 280px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.box_localizacao{
+	width: 450px;
+	height: 100%;
+	float: left;
+}
+
+.box_frase{
+	width: 300px;
+	height: 100%;
+	float: left;
+}
+
+.box_cartoes{
+	width: 450px;
+	height: 100%;
+	float: left;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url('../img/cartoes.png');
+}
+
+.localizacao_title{
+	color: white;
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.localizacao_mapa{
+	width: 100%;
+	height: 200px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image:url(../img/mapa_site.png);
+}
+
+.localizacao_description{
+	color: white;
+	position: relative;
+}
+
+.frase{
+	width: 260px;
+	height: 140px;
+	margin:0 auto;
+	margin-top: 70px;
+	color: white;
+}
+
+/* antigo banner */
+.esp_banner{
+	width: 100%;
+	height: 800px;
+	float: left;
+	margin-top: -180px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-image: url('../img/banner1.png');
+}
+
+.banner{
+	width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+/* novo banner */
+.container{
+	width: 100%;
+	height: 800px;
+	float: left;
+	margin-top: -180px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-color: #f4f4f4;
+}
+
+.slides{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.conteudo {
+	width: 1200px;
+	height: 100%;
+}
+
+.esp_conteudo{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+
+/* Caixa do usuário logado */
+.box_botoes {
+	width: 100%;
+    height: 30%;
+    display: block;
+    position: relative;
+    top: 20%;
+    clear: both;
+    float: right;
+}
+
+/* Estilização dos botões */
+
+.user_exit {
+	width: 30px;
+	height: 30px;
+	background: url(../img/exit.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	float: right;;
+	border: none;
+}
+
+
+.user_config {
+	width: 30px;
+	height: 30px;
+	background: url(../img/configuration.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	float: right;;
+	border: none;
+}
+
+
+
+.user_cms {
+	width: 30px;
+	height: 30px;
+	background: url(../img/cms.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	float: right;;
+	margin-left: 28%;
+	margin-right: 2%;
+	border: none;
+}
+
+.user_cms:hover, .user_config:hover, .user_exit:hover {
+	cursor: pointer;
+}
+
+.promocao{
+	width: 125px;
+    height: 125px;
+    position: absolute;
+    left: 11%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+	background-image: url('../img/promocao.png');
+}
+
+.box_barra_busca{
+	width: 870px;
+	height: 100px;
+	top:0px;
+	left: 100px;
+	float: left;
+	margin-left: 20px;
+	border-radius:0 0 20px 20px;
+	background-color: black;
+	color: #fff;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a90329+0,8f0222+44,6d0019+100;Brown+Red+3D */
+	background-color: #a90329; /* Old browsers */
+	position: relative;
+	z-index: 100;
+	position: absolute;
+	z-index: 100;
+}
+
+.box_caixa_texto{
+	height: 40px;
+	width: 600px;
+	margin-top: 45px;
+	margin-left: 30px;
+	float: left;
+}
+
+.txtBarraBusca{
+	width: 570px;
+	height: 100%;
+	border:none;
+	padding-left: 30px;
+	font-size: 14pt;
+	border-radius: 15px;
+}
+
+.box_btn_pesquisar{
+	height: 40px;
+	width: 150px;
+	margin-top: 45px;
+	margin-left: 20px;
+	float: left;
+}
+
+.btnBarraBusca{
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+	border:none;
+	font-size: 14pt;
+	background-color: transparent;
+	border:3px solid #fff;
+	color: #fff;
+	cursor: pointer;
+}
+
+.box_dieta{
+	width: 180px;
+    height: 130px;
+    background: orange;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.box_dias_dieta{
+	margin-top: 15px;
+    text-align: center;
+    color: white;
+}
+
+.box_tipo_dieta{
+	margin-top: 10px;
+    text-align: center;
+    font-size: 12pt;
+    font-weight: bold;
+    color: white;
+}
+
+.nada_encontrado{
+	font-size: 20pt;
+  width: 700px;
+  height: 260px;
+  padding-top: 150px;
+  color: #747474;
+}
+
+}

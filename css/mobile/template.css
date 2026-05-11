@@ -1,0 +1,572 @@
+/*
+
+CSS do início
+
+*/
+@media only screen and (max-width: 500px) {
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Verdana;
+}
+
+h1 {
+  font-size: 5.9vw;
+}
+h2 {
+  font-size: 3.0vh;
+}
+p {
+  font-size: 2vmin;
+}
+
+/* Estrutura do cabeçalho */
+.esp_logo_menu_login {
+	width: 100%;
+    height: auto;
+    padding-top: 3%;
+
+	background: #a90329;
+  	background: -moz-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%);
+  	background: -webkit-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%);
+  	background: linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%);
+}
+
+.box_logo_menu_login {
+	width: 100%;
+	height: auto;
+}
+
+/* Logo */
+.box_logo {
+	width: 17%;
+	height: 0;
+	float: left;
+	display: block;
+	background-size: contain;;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url('../../img/logo.png');
+	padding-bottom: 17%;
+  	background-size: 100%;
+}
+
+.box_logo::before {
+	content: 'FROZEN FITNESS';
+	position: relative;
+	top: 0.2em;
+	left: 108%;
+	width: 20px;
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 1.4em;
+	color: #fff;
+	text-shadow: 1px 1px #888888;
+}
+
+/* Menu */
+.box_menu {
+	width: 50%;
+	height: auto;
+	float: right;
+	padding-bottom: 5%;
+}
+
+/* Estrutura da caixa do menu */
+.box_menu_caixa {
+	display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 36%;
+    z-index: 999;
+    padding-top: 22%;
+    padding-bottom: 5%;
+    /*background: #a90329;*/
+    /*background: -moz-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%);*/
+    /*background: -webkit-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%);*/
+    /*background: linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%);*/
+    background: linear-gradient(to top, #9f0326,#a50328);
+}
+
+/*
+
+
+*/
+
+.texto_login {
+	display: none;
+}
+
+.box_foto{
+	width: 30%;
+    height: 100%;
+    padding-bottom: 30%;
+    float: left;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../../img/usuario/user.png);
+    background-color: #fff;
+    margin-top: 1%;
+    margin-left: 3%;
+}
+
+.botao_login {
+	display: block;
+    margin: auto;
+    margin-top: 1.2%;
+    width: 80%;
+    height: auto;
+    border-radius: 50px;
+    font-size: 1.5em;
+    line-height: 1.8em;
+    cursor: pointer;
+	background: #59bd6e; /* Old browsers */
+	background: -moz-linear-gradient(top,  #59bd6e 0%, #40ac65 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #59bd6e 0%,#40ac65 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #59bd6e 0%,#40ac65 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59bd6e', endColorstr='#40ac65',GradientType=0 ); /* IE6-9 */
+	color: white;
+	border:1px solid #59bd6e;
+	text-align: center;
+}
+
+.item_login a {
+	text-decoration: none;
+}
+
+
+/* Itens do menu */
+.box_item_menu {
+	clear: both;
+	width: 100%;
+    height: 10%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    float: left;
+    padding: 3% 0;
+    display: none;
+}
+
+.box_item_menu:first-child {
+	background-color: #46b067;
+	color: #fff;
+	font-weight: bold;
+	display: block;
+}
+
+.box_item_menu:first-child p {
+	position: relative;
+    font-size: 1em;
+    left: 4%;
+}
+
+.box_item_menu:first-child::before {
+	width: 8%;
+    height: auto;
+    padding-bottom: 7%;
+    content: "";
+    background: url(../../img/menu.png) no-repeat 0 0;
+    background-size: 100%;
+    float: right;
+    position: relative;
+    left: -2%;
+    margin-top: -2%;
+}
+
+.box_item_menu_estilo {
+	color: #fff;
+	text-decoration: none;
+}
+
+.box_action_menu_gradient {
+	width: 30%;
+	height: 10%;
+	max-height: 60px;
+	float: left;
+	margin-top: 1%;
+	margin-left: 2%;
+	border-radius: 20px;
+	cursor: pointer;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#75d273+-1,25b13c+100 */
+	background: #75d273; /* Old browsers */
+	background: -moz-linear-gradient(top,  #75d273 -1%, #25b13c 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #75d273 -1%,#25b13c 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #75d273 -1%,#25b13c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75d273', endColorstr='#25b13c',GradientType=0 ); /* IE6-9 */
+}
+
+/* Botão de pesquisa e carrinho */
+.box_action_menu {
+	width: 100%;
+	height: 0;
+	padding-bottom: 100%;
+	float: left;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 60%;
+}
+
+#barra_busca {
+	background-image: url('../../img/lupa_icon.svg');
+}
+
+#carrinho {
+	background-image: url('../../img/cart.svg');
+}
+
+/* Caixa do span */
+.box_action_menu_borda  {
+	width: 25px;
+	height: 25px;
+	background: #fb5555;
+	border-radius: 100%;
+	float: right;
+	position: relative;
+	left: 11%;
+	margin-top: -10%;
+}
+
+.box_action_menu_borda p {
+	text-align: center;
+	color: #fff;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 1em;
+}
+
+/* Botão de ocultar o menu */
+#open_menu {
+	float: right;
+	background-image: url('../../img/menu.png');
+}
+
+/* Pesquisa */
+.box_barra_busca {
+	display: none;
+}
+
+
+/*
+ESTRUTURA
+DO
+USUARIO
+*/
+
+/* Login */
+.box_login {
+	display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding-top: 5%;
+    top: 13%;
+    z-index: 999;
+    
+    background: #a90329;
+    background: -moz-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%);
+    background: -webkit-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%);
+    background: linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%);
+    background: linear-gradient(to bottom, #76011b,#a50328);
+}
+
+.box_foto_ola {
+	width: 100%;
+	height: 100%;
+	/*background-color: red;*/
+}
+
+.box_login_cadastrar {
+	width: 100%;
+	height: 100%;
+}
+
+.img_box_foto {
+	width: 30%;
+    border-radius: 50%;
+    float: left;
+    padding: 2%;
+    background: #fff;
+    border: 1px solid #77011c;
+}
+
+.ola {
+	clear: both;
+    display: inline-block;
+    font-size: 2em;
+    line-height: 4.3em;
+    position: relative;
+    top: 50%;
+    margin-left: 2%;
+    color: #fff;
+    text-shadow: 1px 1px #888888;
+}
+
+
+/* Caixa do usuário logado */
+.box_botoes {
+	width: 100%;
+    height: 30%;
+    display: block;
+    position: relative;
+    clear: both;
+    float: right;
+    margin-top: -10%;
+    left: -2%;
+    padding-bottom: 2%;
+}
+
+/* Estilização dos botões */
+
+.user_exit {
+	width: 9%;
+    height: 0;
+    padding-bottom: 10%;
+	background: url(../../img/exit.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 90%;
+	float: right;
+	border: none;
+}
+
+.user_config {
+	width: 10%;
+    height: 0;
+    padding-bottom: 10%;
+	background: url(../../img/configuration.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	float: right;
+	border: none;
+	margin-right: 2%;
+}
+
+.user_cms {
+	width: 10%;
+    height: 0;
+    padding-bottom: 10%;
+    background: url(../../img/cms.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: right;
+    border: none;
+    margin-right: 2%;
+}
+
+/* Caixa de Pesquisa */
+
+.box_barra_busca{
+	width: 100%;
+    height: auto;
+    top: -30%;
+    float: left;
+    color: #fff;
+    background-color: #a90329;
+    z-index: 1000;
+    position: absolute;
+    display: block;
+    padding-bottom: 5%;
+    opacity: 0;
+}
+
+.box_caixa_texto{
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+    float: left;
+}
+
+.txtBarraBusca{
+    width: 82%;
+    height: 2.2em;
+    border: none;
+    font-size: 1.2em;
+    border-radius: 15px;
+    display: block;
+    margin: auto;
+    padding: 0 4%;
+}
+
+.box_btn_pesquisar{
+    width: 100%;
+	height: auto;
+    margin-top: 5%;
+    float: left;
+}
+
+.btnBarraBusca{
+	width: 90%;
+    height: 2.2em;
+    border-radius: 15px;
+    font-size: 1.2em;
+    background-color: transparent;
+    border: 3px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+
+
+
+
+/*
+ESTRUTURA
+DO
+BANNER
+*/
+.container{
+	width: 100%;
+	height: auto;
+	float: left;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-color: #f4f4f4;
+}
+
+.slides{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+/*
+ESTRUTURA
+DO
+CONTEÚDO
+*/
+.conteudo {
+	width: 100%;
+	height: 100%;
+}
+
+.esp_conteudo{
+	width: 100%;
+	height: auto;
+}
+
+
+/*
+ESTRUTURA
+DO
+RODAPÉ
+*/
+.esp_rodape {
+    width: 100%;
+    height: auto;
+    padding-bottom: 5%;
+    background: #a90329;
+    background: -moz-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%);
+    background: -webkit-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%);
+    background: linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%);
+}
+
+.box_localizacao_frase_cartoes{
+	width: 100%;
+	height: auto;
+}
+
+.box_localizacao{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+
+.box_frase{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+
+.box_cartoes{
+	width: 90%;
+	height: auto;
+	padding-bottom: 40%;
+	background-image: url('../../img/cartoes.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	clear: both;
+	margin: auto;
+	margin-bottom: 10%;
+}
+
+.localizacao_title{
+	color: #fff;
+	position: relative;
+	margin: 2% 0 2% 5%;
+}
+
+.localizacao_mapa{
+	width: 90%;
+	padding-bottom: 41%;
+	background-image: url('../../img/mapa.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: auto;
+	display: block;
+}
+
+.localizacao_description{
+	width: 90%;
+	color: #fff;
+	text-align: center;
+	position: relative;
+	margin: 4% 5% 0 5%;
+	font-size: 1em;
+}
+
+.frase{
+	width: 100%;
+	height: auto;
+	color: #fff;
+	text-align: center;
+	margin: 10% 0;
+}
+
+/*
+ESTRUTURA
+CAIXA
+DIETA
+*/
+
+.box_dieta{
+	width: 70%;
+	height: auto;
+	background: orange;
+	border-radius: 10px;
+	padding: 7% 5%;
+	margin: 0 auto;
+	margin-bottom: 5%;
+}
+
+.box_dias_dieta{
+	margin-top: 2%;
+  text-align: center;
+  color: white;
+}
+
+.box_tipo_dieta{
+	margin-top: 2%;
+	text-align: center;
+	font-size: 1em;
+	font-weight: bold;
+	color: white;
+	padding: 10%;
+}
+
+}

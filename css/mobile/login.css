@@ -1,0 +1,148 @@
+/* Estilização do login - Mobile */
+
+@media only screen and (max-width: 500px) {
+
+.esp_conteudo{
+	width: 100%;
+	height: auto;
+	background: #f4f4f4;
+}
+
+.conteudo {
+	margin: 10% 0;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 200%;
+    position: relative;
+}
+
+body{
+    float: left;
+    background-size: 100%;
+    /*background-repeat: no-repeat;*/
+    background-position: top;
+    background-image: url(../../img/banner000.jpg);
+}
+
+.esp_logo_menu_login{
+	/*height: 100px;*/
+}
+
+.esp_conteudo{
+	height: auto;
+	background-color: transparent;
+	margin-bottom: 5%;
+	position: relative;
+}
+
+.conteudo_transparente{
+	width: 100%;
+	height: auto;
+	padding-bottom: 200%;
+	position: absolute;
+	top:0;
+	background-color: #000;
+	border-radius: 20px;
+	opacity: 0.7
+}
+
+.conteudo_visivel{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top:0;
+}
+
+
+.box_login_corpo{
+	
+}
+
+
+.box_menu_caixa {
+	top: 13%;
+	padding-top: 5%;
+	background: linear-gradient(to top, #a30328,#6f001a);
+}
+
+.box_login_corpo{
+	width: 100%;
+	height: auto;
+	
+	float: left;
+	opacity: 1;
+}
+
+.box_caixa_login{
+	width: 100%;
+	margin-top: 10%;
+	height: auto;
+}
+
+.box_titulo_login{
+	height: 50px;
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	margin-top: 60px;
+	font-size: 16pt;
+	margin-bottom: 30px;
+}
+
+.btn_cadastrar_link {
+	text-decoration: none;
+}
+
+.box_caixa_texto_login{
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	font-size: 14pt;
+	margin-bottom: 25px;
+
+}
+
+.box_input_login{
+	width: 80%;
+	height: 100%;
+	padding-left: 40px;
+	border-radius: 20px;
+	border:none; 
+	font-size: 14pt;
+}
+
+.box_button_login{
+	width: 90%;
+	height: 100%;
+	border-radius: 20px;
+	border:none; 
+	font-size: 14pt;
+	background-color: #60B35F;
+	color: #ffffff;
+	cursor: pointer;
+	/*opacity: 0.6;*/
+}
+
+#caixa_da_esquerda{
+	width: 98%;
+    display: block;
+    margin: auto;
+    padding-bottom: 10%;
+    border-bottom: 0.8em solid #fff;
+}
+
+.btn_cadastrar{
+	width: 90%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 3px solid #fff;
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+    margin-top: 60px;
+    font-size: 14pt;
+}
+
+}

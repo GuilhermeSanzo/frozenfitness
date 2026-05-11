@@ -1,0 +1,248 @@
+/* Estilização da página do carrinho */
+
+@media only screen and (min-device-width: 500px) {
+
+.esp_conteudo {
+    background-color: #f4f4f4;
+}
+
+.conteudo {
+
+}
+
+.box_processo_compras {
+  width: 100%;
+  height: 150px;
+
+  /* Alinhando os itens */
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.box_processo_compras a {
+  color: #939393;
+}
+
+.box_processo_compra {
+  width: 200px;
+  height: 145px;
+  float: left;
+  border: 2px solid #939393;
+  border-radius: 20px;
+  font-weight: bold;
+  background-color: #fff;
+}
+
+.box_processo_compra.cart {
+  color: #55ba6c;
+  border: 2px solid #55ba6c;
+  background: url('../img/cart_green.png');
+  background-repeat: no-repeat;
+  background-position: center 20px;
+  background-color: #fff;
+}
+
+.box_processo_compra.delivery {
+  background: url('../img/account_grey.png');
+  background-repeat: no-repeat;
+  background-position: center 20px;
+  background-color: #fff;
+}
+
+.box_processo_compra.payment {
+  background: url('../img/coin_grey.png');
+  background-repeat: no-repeat;
+  background-position: center 20px;
+  background-color: #fff;
+}
+
+.box_processo_compra p {
+  text-align: center;
+  position: relative;
+  top: 110px;
+}
+
+.seta_direita {
+  width: 180px;
+  height: 145px;
+  background: url('../img/proximo_icon.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Produtos adicionados ao carrinho */
+.lista_carrinho {
+  margin: 50px 0;
+}
+
+.tbl_lista_carrinho {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.tbl_lista_carrinho td {
+  width: 15%;
+}
+
+.tbl_lista_carrinho thead {
+  background-color: #c5ffd9;
+}
+
+.tbl_lista_carrinho thead tr {
+  height: 50px;
+}
+
+.tbl_lista_carrinho thead th, tbody td {
+  position: relative;
+  left: 10px;
+}
+
+.tbl_lista_carrinho tbody {
+  background-color: #fff;
+}
+
+.tbl_lista_carrinho tbody tr {
+  height: 150px;
+  border-bottom: 1px solid #939393;
+}
+
+.tbl_lista_carrinho tbody .tr_menor {
+  height: 100px;
+  color: #70d06f;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.tbl_lista_carrinho tbody tr:last-child {
+  border: none;
+}
+
+.tbl_lista_carrinho tbody tr td img {
+  width: 90%;
+  height: 130px;
+  outline: 1px solid #939393;
+}
+
+.input_number {
+  width: 52%;
+  height: 50px;
+  border: 1px solid #000;
+  border-radius: 50px;
+  font-size: 16px;
+  text-align: center;
+  padding: 0 4%;
+  outline: none;
+}
+
+/* Removendo as setas do botão */
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+  margin: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.remove_item {
+  width: 40px;
+  height: 40px;
+  background: url('../img/remove_item.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  position: relative;
+  left: 20px;
+}
+
+/* Botões de ação do carrinho */
+
+.limpar_carrinho {
+  color: #fff;
+  width: 95%;
+  font-size: 20px;
+  text-align: center;
+  background-color: #fb5555;
+  border-radius: 20px;
+  border: none;
+  height: 58%;
+  cursor: pointer;
+  outline: none;
+}
+.atualizar_carrinho {
+  color: #fff;
+  width: 95%;
+  font-size: 20px;
+  text-align: center;
+  background-color: #9c9c9c;
+  border-radius: 20px;
+  border: none;
+  height: 58%;
+  cursor: pointer;
+  outline: none;
+  display: none;
+}
+.finalizar_carrinho {
+  color: #fff;
+  width: 95%;
+  font-size: 20px;
+  text-align: center;
+  background-color: #70d06f;
+  border-radius: 20px;
+  border: none;
+  height: 58%;
+  cursor: pointer;
+  outline: none;
+}
+
+
+/* Caso não tenha produtos no carrinho */
+.titulo_sem_produto {
+  text-align: center;
+}
+
+.sad_face {
+  margin-top: 20px;
+  width: 512px;
+  height: 512px;
+  background: url('../img/sad_face.png');
+  background-size: cover;
+  background-position: center;
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.2;
+}
+
+/* Lista de Pedidos */
+
+.link_lista_pedidos {
+  color: #55ba6c;
+  text-decoration: none;
+}
+
+.link_lista_pedidos h2 {
+  text-align: center;
+  margin-bottom: 5%;
+  position: relative;
+  left: -2%;
+}
+
+.link_lista_pedidos h2::before {
+  content: url(../img/list.png);
+  position: absolute;
+  top: 10%;
+  left: 60%;
+}
+
+}

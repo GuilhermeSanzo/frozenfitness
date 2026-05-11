@@ -1,0 +1,184 @@
+/*
+
+Estilização do Fale Conosco - Mobile
+
+*/
+
+@media only screen and (max-width: 500px) {
+
+/*
+ESTRUTURA
+DO
+BANNER
+*/
+
+.esp_banner{
+	width: 100%;
+	height: auto;
+	padding-bottom: 49%;
+	display: block;
+	float: left;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-image: url('../../img/banner_cadastrar.png');
+	position: relative;
+	outline: 1px solid #888888;
+}
+
+.esp_banner h1 {
+	font-size: 1.8em;
+	color: #fff;
+	text-shadow: 2px 2px #000;
+	position: absolute;
+	left: 5%;
+	bottom: 5%;
+}
+
+/*
+ESTRUTURA
+DO
+CONTEUDO
+*/
+
+.esp_conteudo{
+	width: 100%;
+	height: auto;
+	background: #f4f4f4;
+}
+
+.conteudo {
+	clear: both;
+	width: 100%;
+	height: auto;
+	margin: 10% 0;
+	padding-top: 1%;
+}
+
+
+/*
+ESTRUTURA
+DO
+FALE CONOSCO
+*/
+
+
+.box_form_fale_conosco{
+	width: 100%;
+	height: auto;
+	margin: 10% auto;
+}
+
+.caixa_texto{
+	clear: both;
+	width: 96%;
+	margin: auto;
+}
+
+.title_caixa_texto{
+	width: 100%;
+	font-size: 1.5em;
+	margin: 2% 0;
+}
+
+.input_caixa_texto{
+	width: 100%;
+	font-size: 1.5em;
+	display: block;
+	margin: auto;
+}
+
+.input_text{
+	width: 100%;
+	font-size: 1.1em;
+	border:none;
+	background: none;
+	border-bottom: 1px solid #8c0606;
+}
+
+.caixa_spinner{
+	width: 100%;
+	margin: 4% 2% 2% 2%;
+}
+
+.box_spinner{
+	width: 100%;
+	margin-bottom: 2%;
+}
+
+/* The CSS */
+select {
+    padding-left:30px;
+    margin: 0;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:30px;
+    background: #8c0606;
+    color:#fff;
+    border:none;
+    outline:none;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+    height: 50px;
+    width: 100%;
+    font-size: 18pt;
+}
+
+/* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    select {padding-right:18px}
+}
+
+label {position:relative}
+label:after {
+	/*content: "◀▶";*/
+	content: url("../../img/arrows.png");
+	font: 14px "Consolas", monospace;
+	color: #fff;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+	right: 8px;
+	top: 2px;
+	padding: 0 0 2px;
+	border-bottom: 1px solid #8c0606;
+	position: absolute;
+	pointer-events: none;
+	top: 10px;
+}
+/*label:before {
+    content:'';
+    right:6px; top:0px;
+    width:20px; height:20px;
+    background:#8c0606;
+    position:absolute;
+    pointer-events:none;
+    display:block;
+}*/
+
+.input_text_area{
+	width: 92%;
+	height: auto;
+	border-radius: 20px;
+	border: 1px solid #8c0606;
+	font-size: 1em;
+	padding: 2% 4% 10% 4%;
+	background-color: #f4f4f4;
+	font-family: Verdana;
+}
+
+.form_submit{
+	width: 100%;
+	border: 3px solid #1c881b;
+	padding: 10px;
+	font-size: 18pt;
+	color: #1c881b;
+	background-color: #f4f4f4;
+	border-radius: 30px;
+	cursor: pointer;
+}
+
+}

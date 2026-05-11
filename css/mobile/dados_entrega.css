@@ -1,0 +1,271 @@
+/* Estilização de Dados de Entrega - Desktop */
+
+@media only screen and (max-width: 500px) {
+
+body {
+  background-color: #f4f4f4;
+}
+
+.conteudo {
+  /*margin: 10% 0;*/
+  background: #f4f4f4;
+}
+
+/*
+BOTÃO
+VALIDAÇÃO
+*/
+
+.tooltip_valid {  
+  display: block;
+  padding: 0% 11%;
+  background: #70d06f;
+  border-radius: 3px;
+  color: white;
+  height: 30px;
+  /* top: 18px; */
+  /* left: -5%; */
+  bottom: -50%;
+  right: 32%;
+  line-height: 30px;
+  position: absolute;
+  font-size: 0.7em;
+  float: right;
+}
+
+.tooltip_valid:before {
+  display: block;
+  content: "";
+  position: absolute;
+  /* top: 10px; */
+  left: 45%;
+  bottom: 97%;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #70d06f;
+}
+
+.tooltip {  
+  display: none;
+  padding: 0% 11%;
+  background: #fb5555;
+  border-radius: 3px;
+  color: white;
+  height: 30px;
+  /*top: 5px;
+  left: -3%;*/
+  bottom: -50%;
+  right: 30%;
+  line-height: 30px;
+  position: absolute;
+  font-size: 0.7em;
+  float: right;
+}
+
+.tooltip:before {
+  display: block;
+  content: "";
+  position: absolute;
+  /* top: 10px; */
+  left: 45%;
+  bottom: 97%;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fb5555;
+}
+
+/*
+PROCESSO
+COMPRA
+*/
+
+.box_processo_compra.cart {
+  color: #55ba6c;
+  border: 2px solid #55ba6c;
+  background: url('../../img/cart_green.png');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center 20px;
+  background-color: #fff;
+}
+
+.box_processo_compra.delivery {
+  color: #55ba6c;
+  border: 2px solid #55ba6c;
+  background: url('../../img/account_green.png');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center 20px;
+  background-color: #fff;
+}
+
+.box_processo_compra.payment {
+  background: url('../../img/coin_grey.png');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center 20px;
+  background-color: #fff;
+}
+
+/*
+ESTRUTURA
+DO
+ENDERECO
+*/
+
+.endereco {
+  width: 100%;
+  height: auto;
+  background-color: #f4f4f4;
+  margin: auto;
+}
+
+.endereco table {
+	border-collapse: collapse;
+	width: 100%;
+	margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.endereco thead tr th {
+  padding-bottom: 20px;
+}
+
+.endereco tr th {
+	text-align: center;
+	margin-top: 1%;
+	color: #70d06f;
+  font-size: 24px;
+}
+
+.endereco table tr td {
+	padding-bottom: 10px;
+}
+
+.endereco table tr td:first-child {
+  width: 30%;
+  text-align: right;
+  font-weight: bold;
+  position: relative;
+  left: 0%;
+}
+
+.endereco table tr td:last-child {
+	width: 70%;
+	text-align: justify;
+}
+
+.endereco tr td input[type="text"], .endereco tr td input[type="number"] {
+  width: 80%;
+  height: 40px;
+  border: 1px solid #000;
+  border-radius: 50px;
+  font-size: 16px;
+  text-align: center;
+  padding: 0 4%;
+  outline: none;
+  background: #fff;
+}
+
+.endereco tr td input[type="text"]:not(#data_entrega), .endereco tr td input[type="number"] {
+  width: 80%;
+}
+
+.endereco tr td input[type="reset"] {
+  width: 60%;
+  height: 40px;
+  border: 1px solid #000;
+  border-radius: 50px;
+  font-size: 16px;
+  text-align: center;
+  padding: 0 4%;
+  outline: none;
+	background: #fff;
+  float: right;
+}
+
+.endereco tr td input[type="submit"] {
+	width: 88%;
+  height: 40px;
+  border: 1px solid #000;
+  border-radius: 50px;
+  font-size: 16px;
+  text-align: center;
+  padding: 0 4%;
+  outline: none;
+	background: #55ba6c;
+  color: #ffffff;
+}
+
+
+.endereco tr td select {
+	width: 88.5%;
+  height: 40px;
+  border: 1px solid #000;
+  border-radius: 50px;
+  font-size: 16px;
+  text-align: center;
+  text-align-last: center;
+  padding: 0 4%;
+  outline: none;
+  background: #fff;
+}
+
+.endereco tr td p {
+  text-align: left;
+  color: #fb5555;
+  font-size: 1em;
+  margin: 2% 10% 0 10%;
+}
+
+.textarea_resultado {
+	width: 60%;
+  height: 200px;
+  border: 1px solid #000;
+  border-radius: 20px;
+  font-size: 16px;
+  text-align: center;
+  padding: 0 4%;
+  outline: none;
+	background: #fff;
+	resize: none;
+}
+
+.textarea_resultado::-webkit-scrollbar {
+	display: none;
+}
+
+.endereco_excluir_link {
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+
+.endereco_excluir {
+	width: 60%;
+	height: 40px;
+  border: 1px solid #000;
+  border-radius: 20px;
+  font-size: 16px;
+  text-align: center;
+  padding: 0 4%;
+  outline: none;
+	background: #fb5555;
+	resize: none;
+
+}
+
+.endereco_excluir p {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+}

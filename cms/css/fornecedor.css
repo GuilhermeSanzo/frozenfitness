@@ -1,0 +1,162 @@
+/* Estilização da página de cadastro e visualização de ingredientes */
+
+/* Cadastro de ingredientes */
+
+.cadastro_ingrediente {
+	width: 80%;
+	min-height: 300px;
+	height: auto;
+	border: 1px solid #000;
+	border-radius: 20px;
+	margin: auto;
+	margin-top: 40px;
+}
+
+.cadastro_ingrediente_titulo {
+	width: 100%;
+	height: 50px;
+	background: linear-gradient(#2df658, #1fa83c);
+	border-radius: 20px 20px 0 0;
+	text-align: center;
+
+	/* habilita o flex nos filhos diretos */
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+
+	/* centraliza na vertical */
+    -ms-align-items: center;
+    -webkit-align-items: center;
+	align-items: center;
+
+  	/* centraliza na horizontal */
+ 	-ms-justify-content: center;
+ 	-webkit-justify-content: center;
+ 	justify-content: center;
+}
+
+.cadastro_ingrediente_titulo h3 {
+	color: #fff;
+	text-shadow: 1px 1px #000;
+}
+
+.cadastro_ingrediente table {
+	width: 100%;
+	height: auto;
+	margin: 20px 0;
+
+	/* habilita o flex nos filhos diretos */
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+
+	/* centraliza na vertical */
+  -ms-align-items: center;
+  -webkit-align-items: center;
+	align-items: center;
+
+  	/* centraliza na horizontal */
+ 	-ms-justify-content: center;
+ 	-webkit-justify-content: center;
+ 	justify-content: center;
+}
+
+.cadastro_ingrediente table tr {
+	height: 40px;
+}
+
+.cadastro_ingrediente table	tr td {
+	width: 50%;
+	margin: auto;
+}
+
+.botoes_cadastro {
+	width: 90%;
+	height: 80%;
+	font-size: 16px;
+	color: #fff;
+	border: 1px solid #005412;
+	background-color: #2df658;
+	border-radius: 50px;
+	margin: auto;
+	position: relative;
+	left: 5%;
+}
+
+.botoes_cadastro:hover {
+	cursor: pointer;
+}
+
+.cadastro_input {
+	width: 96%;
+	height: 80%;
+	border:	1px solid #000;
+	border-radius: 50px;
+	font-size: 16px;
+	padding: 0 2%;
+}
+
+.selecao_cadastro {
+	width: 100%;
+	height: 80%;
+	border:	1px solid #000;
+	border-radius: 50px;
+	font-size: 16px;
+	padding: 0 2%;
+}
+
+/* Visualização dos ingredientes */
+
+.visualizacao_ingrediente {
+	width: 80%;
+	min-height: 300px;
+	height: auto;
+	border: 1px solid #000;
+	border-radius: 20px;
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.visualizacao_ingrediente table {
+	width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+.visualizacao_ingrediente table tr {
+	height: 40px;
+}
+
+.visualizacao_ingrediente table tr td {
+	width: 9%;
+	margin: auto;
+	text-align: center;
+}
+
+
+.visualizacao_ingrediente img {
+	width: 80%;
+	outline: 1px solid #000;
+}
+
+.visualizacao_ingrediente a {
+	text-decoration: none;
+	color: #000;
+}
+
+.visualizacao_ingrediente a:nth-child(1):hover {
+	color: green;
+}
+
+
+.visualizacao_ingrediente a:nth-child(2):hover {
+	color: red;
+}
+
+.visualizacao_ingrediente_titulo_campo {
+	width: 100%;
+	height: auto;
+	font-weight: bold;
+	border-bottom: 1px solid #000;
+}

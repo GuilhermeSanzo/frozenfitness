@@ -1,0 +1,162 @@
+/* Estilização da tela de pagamento - Mobile */
+
+@media only screen and (max-width: 500px) {
+
+body, .conteudo {
+	background-color: #f4f4f4;
+}
+
+/*
+PROCESSO
+DE
+COMPRA
+*/
+
+.box_processo_compra.cart {
+	color: #55ba6c;
+	border: 2px solid #55ba6c;
+	background: url('../../img/cart_green.png');
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: center 20px;
+	background-color: #fff;
+}
+
+.box_processo_compra.delivery {
+	color: #55ba6c;
+	border: 2px solid #55ba6c;
+	background: url('../../img/account_green.png');
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: center 20px;
+	background-color: #fff;
+}
+
+.box_processo_compra.payment {
+	color: #55ba6c;
+	border: 2px solid #55ba6c;
+	background: url('../../img/coin_green.png');
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: center 20px;
+	background-color: #fff;
+}
+
+/*
+ESTRUTURA
+DO
+PAGAMENTO
+*/
+
+.pagamento {
+	width: 100%;
+    height: auto;
+    background-color: #f4f4f4;
+    margin: auto;
+}
+
+.pagamento table {
+	border-collapse: collapse;
+	width: 96%;
+	margin: auto;
+  	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.pagamento thead tr th {
+	padding-bottom: 20px;
+}
+
+.pagamento tr th {
+	text-align: center;
+	margin-top: 1%;
+	color: #70d06f;
+	font-size: 24px;
+}
+
+.pagamento table tr td {
+	padding-bottom: 10px;
+}
+
+.pagamento table tr td:first-child {
+	width: 30%;
+	text-align: right;
+	font-weight: bold;
+	position: relative;
+	/*left: -50px;*/
+}
+
+.pagamento table tr td:last-child {
+	width: 70%;
+	text-align: justify;
+}
+
+.pagamento tr td input[type="text"], .pagamento tr td input[type="number"] {
+	width: 84%;
+	height: 40px;
+	border: 1px solid #000;
+	border-radius: 50px;
+	font-size: 16px;
+	text-align: center;
+	padding: 0 4%;
+	outline: none;
+	background: #fff;
+	color: #000;
+}
+
+.pagamento tr td input[type="reset"] {
+  	width: 92%;
+	height: 40px;
+	border: 1px solid #000;
+	border-radius: 50px;
+	font-size: 16px;
+	text-align: center;
+	padding: 0 4%;
+	outline: none;
+	background: #fff;
+	float: right;
+}
+
+.pagamento tr td input[type="submit"] {
+	width: 92%;
+	height: 40px;
+	border: 1px solid #000;
+	border-radius: 50px;
+	font-size: 16px;
+	text-align: center;
+	padding: 0 4%;
+	outline: none;
+	background: #55ba6c;
+	color: #ffffff;
+}
+
+
+.pagamento tr td select {
+	width: 92.5%;
+  	height: 40px;
+	border: 1px solid #000;
+	border-radius: 50px;
+	font-size: 16px;
+	text-align: center;
+	text-align-last: center;
+	padding: 0 0 0 2%;
+	outline: none;
+	background: #fff;
+	outline: none;
+}
+
+.pagamento tr td select option {
+	text-align: center;
+  	text-align-last: center;
+  	outline: none;
+}
+
+.pagamento tr td p {
+    font-size: 1em;
+    text-align: left;
+    margin: 0 5%;
+    position: relative;
+    color: #fb5555;
+}
+
+}

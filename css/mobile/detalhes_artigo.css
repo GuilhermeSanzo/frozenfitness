@@ -1,0 +1,228 @@
+/*
+
+CSS SOBRE NOS
+
+*/
+
+@media only screen and (max-width:500px) {
+
+/*
+ESTRUTURA
+DO
+CONTEUDO
+*/
+
+.esp_conteudo {
+	clear: both;
+	width: 100%;
+	height: auto;
+	background-color: #f4f4f4;
+}
+
+.conteudo {
+	width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 10% 0;
+}
+
+/*
+ESTRUTURA
+CATEGORIAS
+ARTIGO
+*/
+
+.box_categorias{
+    width: 98%;
+    height: auto;
+    border: 3px solid #890000;
+    border-radius: 10px;
+}
+
+.box_item_categoria {
+	width: 100%;
+    height: auto;
+    line-height: 2.5em;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    background-color: #890000;
+    color: #ffffff;
+}
+
+.box_item_categoria p {
+	font-size: 1em;
+}
+
+.box_categoria{
+	display: none;
+	width: 100%;
+    height: auto;
+    line-height: 2.5em;
+    /* border: 3px solid #890000; */
+    float: left;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #890000;
+    background-color: #ffffff;
+    /* margin-bottom: -1%; */
+}
+
+.box_categoria a {
+	color:#890000;
+	background-color: #ffffff;
+	text-decoration: none;
+}
+
+.final{
+	margin-right: 0;
+}
+
+.select{
+	/*border:3px solid #59be6d;*/
+	color:#59be6d;
+}
+
+.select a {
+	color:#59be6d;
+}
+
+/*
+ESTRUTURA
+DOS
+ARTIGOS
+*/
+
+.box_artigo{
+	width: 98%;
+	height: auto;
+	border: 3px solid #890000;
+	border-radius: 10px;
+	background-color: #ffffff;
+	margin-top: 10%;
+	overflow: hidden;
+}
+
+.box_artigo_title_data{
+	width: 100%;
+	height: auto;
+	padding: 3%;
+	border-bottom: 3px solid #890000;
+}
+
+.box_data{
+	width: 24%;
+  height: auto;
+  border: 3px solid #890000;
+  border-radius: 10px;
+  float: left;
+  clear: both;
+}
+
+.box_dia{
+	width: 100%;
+  height: auto;
+  line-height: 1.4em;
+  color: #890000;
+  text-align: center;
+  font-size: 2.3em;
+}
+
+.box_mes{
+	width: 100%;
+	height: auto;
+	border-top: 3px solid #890000;
+	background-color: #890000;
+	border-radius: 0 0 10px 10px;
+	line-height: 1.8em;
+	color: white;
+	text-align: center;
+	margin-bottom: -4%;
+}
+
+.box_title_autor{
+	width: 60%;
+	margin-left: 5%;
+	float: left;
+}
+
+.box_title{
+	width: 100%;
+  max-height: 2.4em;
+  padding-bottom: 1%;
+  float: left;
+  font-weight: bold;
+  font-size: 1.14em;
+  margin-bottom: 1%;
+  overflow: hidden;
+}
+
+.box_autor{
+	width: 60%;
+	height: auto;
+	float: left;
+}
+
+.box_foto_autor{
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+	background-size: 100%;
+	line-height: 30px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url('../../img/autor.png');
+	float: left;
+}
+
+.box_nome_autor{
+	height: 30px;
+	line-height: 30px;
+	margin-left: 10px;
+	font-size: 10pt;
+	float: left;
+}
+
+/*
+ESTRUTURA
+TEXTO
+ARTIGO
+*/
+
+.box_texto_foto_artigo{
+	width: 100%;
+	height: auto;
+	border-radius: 0 0 10px 10px;
+}
+
+.box_foto_artigo{
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	float: left;
+	border-bottom: 3px solid #890000;
+}
+
+.box_texto_artigo{
+	width: 100%;
+  height: auto;
+  text-align: justify;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1em;
+	line-height: 1.73em;
+}
+
+.box_texto_completo {
+	clear: both;
+	width: 92%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	line-height: 1.73em;
+	margin: 0 4%;
+	padding: 4% 0;
+}
+
+}

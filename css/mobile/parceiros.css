@@ -1,0 +1,115 @@
+/* Estilização da página parceiros */
+
+@media only screen and (max-width:500px) {
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*
+ESTRUTURA
+DO
+BANNER
+*/
+
+.esp_banner{
+	width: 100%;
+	height: auto;
+	padding-bottom: 49%;
+	display: block;
+	float: left;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-image: url('../../imagens/background_parceiros.png');
+	position: relative;
+	outline: 1px solid #888888;
+}
+
+.esp_banner h1 {
+	font-size: 1.8em;
+	color: #fff;
+	text-shadow: 2px 2px #000;
+	position: absolute;
+	left: 5%;
+	bottom: 5%;
+}
+
+/*
+ESTRUTURA
+DO
+CONTEUDO
+*/
+
+.esp_conteudo {
+	clear: both;
+	width: 100%;
+	height: auto;
+	background-color: #f4f4f4;
+}
+
+.conteudo {
+	width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 10% 0;
+}
+
+.parceiros {
+	width: 80%;
+	border: 2px solid #890000;
+	border-radius: 10px;
+	display: block;
+	margin: auto;
+	margin-bottom: 10%;
+	background-color: #fff;
+}
+
+.parceiros_imagem {
+	border-bottom: 1px solid #890000;
+}
+
+.img_parceiro{
+	width: 100%;
+  height: 100%;
+  padding-bottom: 70%;
+  background-image: url(../img/addPrato.png);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.parceiros_descricao {
+  width: 100%;
+  height: auto;
+	padding-bottom: 15%;
+  border-bottom: 1px solid #890000;
+}
+
+.parceiros_descricao p {
+  width: 80%;
+  margin: 5% 10% 0 10%;
+  overflow: hidden;
+  font-size: 1em;
+}
+
+.parceiros_link {
+	width: 100%;
+	height: 9%;
+	background-color: #890000;
+	border-radius: 0 0 6px 6px;
+}
+
+.parceiros_link a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.parceiros_link p {
+	text-align: center;
+  	padding: 3%;
+  	font-size: 1em;
+}
+
+}

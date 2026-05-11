@@ -1,0 +1,197 @@
+/*
+
+Estilização do Cadastro de Cliente - Mobile
+
+*/
+
+@media only screen and (max-width: 500px) {
+
+/*
+ESTRUTURA
+DO
+BANNER
+*/
+
+.esp_banner{
+	width: 100%;
+	height: auto;
+	padding-bottom: 49%;
+	display: block;
+	float: left;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-image: url('../../img/banner_fale_conosco.png');
+	position: relative;
+	outline: 1px solid #888888;
+}
+
+.esp_banner h1 {
+	font-size: 1.8em;
+	color: #fff;
+	text-shadow: 2px 2px #000;
+	position: absolute;
+	left: 5%;
+	bottom: 5%;
+}
+
+/*
+ESTRUTURA
+DO
+CONTEUDO
+*/
+
+.esp_conteudo {
+	clear: both;
+	width: 100%;
+	height: auto;
+	background-color: #f4f4f4;
+}
+
+.conteudo {
+	width: 100%;
+  	height: auto;
+  	margin: 0 auto;
+  	padding: 10% 0;
+}
+
+/*
+ESTRUTURA
+FALE
+CONOSCO
+*/
+
+.box_form_fale_conosco{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.caixa_texto{
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.box_nome {
+	width: 100%;
+}
+
+.box_sobre_nome {
+	width: 100%;
+	margin-top: 8%;
+}
+
+.title_caixa_texto{
+	width: 100%;
+    font-size: 1.5em;
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
+
+.input_caixa_texto{
+	width: 100%;
+	font-size: 18pt;
+}
+
+.input_text{
+	width: 96%;
+    font-size: 18pt;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #8c0606;
+    display: block;
+    margin: auto;
+}
+
+.box_nome {
+	width: 100%;
+}
+
+.caixa_spinner{
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.box_spinner{
+	width: 300px;
+	margin-bottom: 30px;
+}
+
+/* The CSS */
+select {
+    padding-left:30px;
+    margin: 0;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:30px;
+    background: #8c0606;
+    color:#fff;
+    border:none;
+    outline:none;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+    height: 50px;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+/* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    select {padding-right:18px;margin-left: 2%;}
+}
+
+label {position:relative}
+label:after {
+	/*content: "◀▶";*/
+	content: url("../../img/arrows.png");
+	font: 14px "Consolas", monospace;
+	color: #fff;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+	right: 8px;
+	top: 2px;
+	padding: 0 0 2px;
+	border-bottom: 1px solid #8c0606;
+	position: absolute;
+	pointer-events: none;
+	top: 10px;
+}
+/*label:before {
+    content:'';
+    right:6px; top:0px;
+    width:20px; height:20px;
+    background:#8c0606;
+    position:absolute;
+    pointer-events:none;
+    display:block;
+}*/
+
+.input_text_area{
+	width: 870px;
+	height: 400px;
+	border-radius: 20px;
+	border: 1px solid #8c0606;
+	font-size: 18pt;
+	padding-left: 30px;
+	padding-top: 20px;
+	background-color: #f4f4f4;
+}
+
+.form_submit{
+	width: 96%;
+	border: 3px solid #1c881b;
+	padding: 10px;
+	font-size: 18pt;
+	color: #1c881b;
+	background-color: #f4f4f4;
+	border-radius: 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+}
+
+}

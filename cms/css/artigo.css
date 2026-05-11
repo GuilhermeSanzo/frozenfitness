@@ -1,0 +1,273 @@
+/* Estilização da página de cadastro e visualização de ingredientes */
+
+/* Cadastro de ingredientes */
+
+.conteudo{
+	width: 1250px;
+}
+
+.principal{
+	width: 1250px;
+}
+
+.menu{
+	margin: 2% auto;
+}
+
+.cadastro_ingrediente {
+	width: 80%;
+	min-height: 300px;
+	height: auto;
+	border: 1px solid #000;
+	border-radius: 20px;
+	margin: auto;
+	margin-top: 40px;
+}
+
+.cadastro_ingrediente_titulo {
+	width: 100%;
+	height: 50px;
+	background: #6bba70; /* Old browsers */
+background: -moz-linear-gradient(top,  #6bba70 0%, #6bba70 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #6bba70 0%,#6bba70 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #6bba70 0%,#6bba70 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6bba70', endColorstr='#6bba70',GradientType=0 ); /* IE6-9 */
+
+	border-radius: 20px 20px 0 0;
+	text-align: center;
+
+	/* habilita o flex nos filhos diretos */
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+
+	/* centraliza na vertical */
+    -ms-align-items: center;
+    -webkit-align-items: center;
+	align-items: center;
+
+  	/* centraliza na horizontal */
+ 	-ms-justify-content: center;
+ 	-webkit-justify-content: center;
+ 	justify-content: center;
+}
+
+.cadastro_ingrediente_titulo h3 {
+	color: #fff;
+
+}
+
+.cadastro_ingrediente table {
+	width: 100%;
+	height: auto;
+	margin: 20px 0;
+
+	/* habilita o flex nos filhos diretos */
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+
+	/* centraliza na vertical */
+  -ms-align-items: center;
+  -webkit-align-items: center;
+	align-items: center;
+
+  	/* centraliza na horizontal */
+ 	-ms-justify-content: center;
+ 	-webkit-justify-content: center;
+ 	justify-content: center;
+}
+
+.cadastro_ingrediente table tr {
+	height: 40px;
+}
+
+.cadastro_ingrediente table	tr td {
+	width: 50%;
+	margin: auto;
+}
+
+.botoes_cadastro {
+	width: 90%;
+	height: 80%;
+	font-size: 16px;
+	color: #fff;
+	border: 1px solid #005412;
+	background: #6bba70; /* Old browsers */
+background: -moz-linear-gradient(top,  #6bba70 0%, #6bba70 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #6bba70 0%,#6bba70 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #6bba70 0%,#6bba70 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6bba70', endColorstr='#6bba70',GradientType=0 ); /* IE6-9 */
+
+	border-radius: 50px;
+	margin: auto;
+	position: relative;
+	left: 5%;
+}
+
+.botoes_cadastro:hover {
+	cursor: pointer;
+}
+
+.cadastro_input {
+	width: 96%;
+	height: 80%;
+	border:	1px solid #000;
+	border-radius: 50px;
+	font-size: 16px;
+	padding: 0 2%;
+}
+
+.selecao_cadastro {
+	width: 100%;
+	height: 80%;
+	border:	1px solid #000;
+	border-radius: 50px;
+	font-size: 16px;
+	padding: 0 2%;
+}
+
+/* Visualização dos ingredientes */
+
+.visualizacao_ingrediente {
+	width: 80%;
+	height: auto;
+	border: 1px solid #000;
+	border-radius: 20px;
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.visualizacao_ingrediente table {
+	width: 100%;
+  height: auto;
+	margin: 1% 0;
+}
+
+.visualizacao_ingrediente table tr {
+	height: 40px;
+}
+
+.visualizacao_ingrediente table tr td {
+	width: 16.6%;
+	margin: auto;
+	text-align: center;
+}
+
+
+.visualizacao_ingrediente img {
+	width: 80%;
+	outline: 1px solid #000;
+}
+
+.visualizacao_ingrediente a {
+	text-decoration: none;
+	color: #000;
+}
+
+.visualizacao_ingrediente a:nth-child(1):hover {
+	color: green;
+}
+
+
+.visualizacao_ingrediente a:nth-child(2):hover {
+	color: red;
+}
+
+.visualizacao_ingrediente_titulo_campo {
+	width: 100%;
+	height: auto;
+	font-weight: bold;
+	border-bottom: 1px solid #000;
+}
+
+#box_ingredientes{
+	margin: 10px auto;
+}
+
+#tr_ingredientes{
+	margin-top: 20px;
+}
+
+.select_tipo_ingrediente {
+	height: 40px;
+	border:	1px solid #000;
+	border-radius: 50px;
+	font-size: 16px;
+	padding: 0 2%;
+}
+
+.select_ingrediente {
+	height: 40px;
+	border:	1px solid #000;
+	border-radius: 50px;
+	font-size: 16px;
+	padding: 0 2%;
+}
+
+.txtQuantidade {
+	height: 40px;
+	border:	1px solid #000;
+	border-radius: 50px;
+	font-size: 16px;
+	padding: 0 2%;
+}
+
+.btnRemove{
+	width: 40px;
+	height: 40px;
+	top:13px;
+	left: 13px;
+	position: relative;
+	border:none;
+	background:none;
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(../img/remove_icon.png);
+	cursor: pointer;
+}
+
+.btnRemoveEditar{
+	width: 40px;
+	height: 40px;
+	top:13px;
+	left: 13px;
+	position: relative;
+	border:none;
+	background:none;
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(../img/remove_icon.png);
+	cursor: pointer;
+}
+
+#adicionar_ingrediente{
+	width: 40px;
+	height: 40px;
+	margin-bottom: 20px;
+	position: relative;
+	border:none;
+	background:none;
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(../img/add_icon.png);
+	cursor: pointer;
+}
+
+#adicionar_ingrediente_editar{
+	width: 40px;
+	height: 40px;
+	margin-bottom: 20px;
+	position: relative;
+	border:none;
+	background:none;
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(../img/add_icon.png);
+	cursor: pointer;
+}
