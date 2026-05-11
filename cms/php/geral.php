@@ -6,7 +6,7 @@
 	}
 
 	function connect(){
-		$conecta = mysqli_connect('localhost', 'root', 'bcd127', 'frozenfitness');
+		$conecta = mysqli_connect('localhost', 'root', '', 'frozenfitness');
 		// $conecta = mysqli_connect('192.168.0.2', 'ypfrozen', 'Pr0j3cts3cur1ty', 'dbypfrozen');
 		// $conecta = mysqli_connect('10.107.134.15', 'root', 'bcd127', 'frozenfitness');
 		// $conecta = mysqli_connect('10.107.144.8', 'root', 'bcd127', 'frozenfitness');

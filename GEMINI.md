@@ -21,6 +21,14 @@ When assisting with this project, the AI (Gemini CLI) MUST strictly adhere to th
 
 ## Refactoring Roadmap
 - [x] **Step 1:** Rollback to initial 2016 commit.
-- [ ] **Step 2:** Fix database connection logic to work in the local environment (current task).
+- [x] **Step 2:** Fix database connection logic to work in the local environment (current task).
 - [ ] **Step 3:** Modernize infrastructure using PDO and Prepared Statements (maintaining Portuguese names).
 - [ ] **Step 4:** Full English migration (code, database aliases, and files).
+
+## Refactoring Ledger
+
+### Step 2: Database Restoration
+- **Local Credentials:** Updated `php/geral.php` and `cms/php/geral.php` to use standard local environment settings:
+    - **User:** `root`
+    - **Password:** (empty)
+    - **Database:** `frozenfitness`
