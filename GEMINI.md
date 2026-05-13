@@ -42,7 +42,7 @@ The target schema translates legacy concepts into a normalized English structure
 ## Next Steps
 - [x] Step 1: Update GEMINI.md directives (Current).
 - [x] Step 2: Install fresh Laravel project and configure SQLite.
-- [ ] Step 3: Generate target English Migrations and Models.
+- [x] Step 3: Generate target English Migrations and Models.
 - [ ] Step 4: Build custom Seeders to migrate legacy Portuguese data into the new English SQLite structure.
 - [ ] Step 5: Implement Public Area (Controllers & Blade views for Home, Meals, Diets).
 - [ ] Step 6: Implement Admin Dashboard (Breeze & CRUDs).
