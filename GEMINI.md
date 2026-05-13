@@ -45,4 +45,5 @@ The target schema translates legacy concepts into a normalized English structure
 - [x] Step 3: Generate target English Migrations and Models.
 - [x] Step 4: Build custom Seeders to migrate legacy Portuguese data into the new English SQLite structure.
 - [ ] Step 5: Implement Public Area (Controllers & Blade views for Home, Meals, Diets).
+    - [x] Home Page generated.
 - [ ] Step 6: Implement Admin Dashboard (Breeze & CRUDs).
