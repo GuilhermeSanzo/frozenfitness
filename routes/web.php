@@ -38,6 +38,16 @@ Route::middleware(['auth', 'verified'])->group(function () {
             'update' => 'ingredients.update',
             'destroy' => 'ingredients.destroy',
         ]);
+
+    Route::resource('admin/meals', \App\Http\Controllers\Admin\MealController::class)
+        ->names([
+            'index' => 'meals.index',
+            'create' => 'meals.create',
+            'store' => 'meals.store',
+            'edit' => 'meals.edit',
+            'update' => 'meals.update',
+            'destroy' => 'meals.destroy',
+        ]);
 });
 
 // Auth Profile
