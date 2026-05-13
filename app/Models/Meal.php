@@ -20,8 +20,20 @@ class Meal extends Model
         return $this->belongsToMany(Ingredient::class)->withPivot('quantity_grams')->withTimestamps();
     }
 
+    public function promotions()
+    {
+        return $this->belongsToMany(Promotion::class)->withTimestamps();
+    }
+
     public function category()
     {
         return $this->belongsTo(Category::class);
+    }
+
+    public function getTotalKcalAttribute()
+    {
+        return round($this->ingredients->sum(function ($ingredient) {
+            return ($ingredient->pivot->quantity_grams / 100) * $ingredient->kcal_per_100g;
+        }));
     }
 }

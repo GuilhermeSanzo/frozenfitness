@@ -10,4 +10,9 @@ class Category extends Model
         'name',
         'color',
     ];
+
+    public function meals()
+    {
+        return $this->hasMany(Meal::class);
+    }
 }
