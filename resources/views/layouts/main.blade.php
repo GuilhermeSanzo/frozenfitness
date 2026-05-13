@@ -23,7 +23,11 @@
                     <a href="{{ route('home') }}" class="text-gray-600 hover:text-green-600 font-medium transition">Home</a>
                     <a href="{{ route('home') }}#catalog" class="text-gray-600 hover:text-green-600 font-medium transition">Meals</a>
                     <a href="{{ route('diets.index') }}" class="text-gray-600 hover:text-green-600 font-medium transition">Diets</a>
-                    <a href="#" class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition font-semibold">Login</a>
+                    @auth
+                        <a href="{{ route('dashboard') }}" class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition font-semibold">Dashboard</a>
+                    @else
+                        <a href="{{ route('login') }}" class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition font-semibold">Login</a>
+                    @endauth
                 </div>
             </div>
         </div>
