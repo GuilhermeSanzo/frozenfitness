@@ -45,7 +45,7 @@
                         <p class="text-gray-500 text-sm mb-8 leading-relaxed">
                             Create weekly meal plans and assign meals to specific fitness goals.
                         </p>
-                        <a href="#" class="inline-flex items-center justify-center w-full py-3 px-4 bg-gray-50 text-gray-700 font-bold rounded-xl hover:bg-blue-600 hover:text-white transition-all duration-200">
+                        <a href="{{ url('admin/diets') }}" class="inline-flex items-center justify-center w-full py-3 px-4 bg-gray-50 text-gray-700 font-bold rounded-xl hover:bg-blue-600 hover:text-white transition-all duration-200">
                             Manage Diets
                         </a>
                     </div>

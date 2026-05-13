@@ -48,6 +48,16 @@ Route::middleware(['auth', 'verified'])->group(function () {
             'update' => 'meals.update',
             'destroy' => 'meals.destroy',
         ]);
+
+    Route::resource('admin/diets', \App\Http\Controllers\Admin\DietController::class)
+        ->names([
+            'index' => 'diets.index',
+            'create' => 'diets.create',
+            'store' => 'diets.store',
+            'edit' => 'diets.edit',
+            'update' => 'diets.update',
+            'destroy' => 'diets.destroy',
+        ]);
 });
 
 // Auth Profile
