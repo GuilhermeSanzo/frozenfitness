@@ -48,3 +48,4 @@ The target schema translates legacy concepts into a normalized English structure
 - [ ] Step 6: Implement Admin Dashboard (Breeze & CRUDs).
     - [x] Admin Dashboard UI implemented.
     - [x] Categories CRUD.
+    - [x] Ingredients CRUD.
