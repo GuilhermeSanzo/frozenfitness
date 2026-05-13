@@ -14,4 +14,14 @@ class Meal extends Model
         'category_id',
         'is_approved',
     ];
+
+    public function ingredients()
+    {
+        return $this->belongsToMany(Ingredient::class)->withPivot('quantity_grams')->withTimestamps();
+    }
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
 }
