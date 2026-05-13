@@ -26,7 +26,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     @foreach($category->meals as $meal)
                         <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 group">
-                            <div class="h-56 bg-gray-200 relative overflow-hidden">
+                            <a href="{{ route('meals.show', $meal) }}" class="block h-56 bg-gray-200 relative overflow-hidden">
                                 @if($meal->image_path)
                                     <img src="{{ $meal->image_path }}" alt="{{ $meal->name }}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                                 @else
@@ -37,10 +37,12 @@
                                 <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-sm font-bold text-green-700 shadow-sm">
                                     {{ $meal->total_kcal }} kcal
                                 </div>
-                            </div>
+                            </a>
                             
                             <div class="p-6">
-                                <h3 class="text-xl font-bold text-gray-800 mb-2 group-hover:text-green-600 transition">{{ $meal->name }}</h3>
+                                <a href="{{ route('meals.show', $meal) }}">
+                                    <h3 class="text-xl font-bold text-gray-800 mb-2 group-hover:text-green-600 transition">{{ $meal->name }}</h3>
+                                </a>
                                 <p class="text-gray-500 text-sm mb-6 line-clamp-2">{{ $meal->description }}</p>
                                 
                                 <div class="flex items-center justify-between">
