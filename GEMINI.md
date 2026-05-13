@@ -49,3 +49,4 @@ The target schema translates legacy concepts into a normalized English structure
     - [x] Admin Dashboard UI implemented.
     - [x] Categories CRUD.
     - [x] Ingredients CRUD.
+    - [x] Meals CRUD.
