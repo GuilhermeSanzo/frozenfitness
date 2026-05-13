@@ -21,8 +21,8 @@
                 </div>
                 <div class="hidden sm:ml-6 sm:flex sm:items-center space-x-8">
                     <a href="{{ route('home') }}" class="text-gray-600 hover:text-green-600 font-medium transition">Home</a>
-                    <a href="#" class="text-gray-600 hover:text-green-600 font-medium transition">Meals</a>
-                    <a href="#" class="text-gray-600 hover:text-green-600 font-medium transition">Diets</a>
+                    <a href="{{ route('home') }}#catalog" class="text-gray-600 hover:text-green-600 font-medium transition">Meals</a>
+                    <a href="{{ route('diets.index') }}" class="text-gray-600 hover:text-green-600 font-medium transition">Diets</a>
                     <a href="#" class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition font-semibold">Login</a>
                 </div>
             </div>
