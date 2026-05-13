@@ -1,34 +1,48 @@
-# Frozen Fitness Gourmet - Project Documentation
+# Project Overview: Frozen Fitness (Laravel Migration)
+A modern reimagining of the Frozen Fitness e-commerce platform, migrating from legacy procedural PHP to the Laravel framework. Focus on modern MVC, English-only standardization, and SQLite portability.
 
-## Project Overview
-Frozen Fitness is a comprehensive e-commerce platform dedicated to selling healthy frozen food. The project features a customer-facing website and a back-office CMS.
+## Main Technologies
+- **Framework:** Laravel 11.x
+- **Language:** PHP 8.2+
+- **Database:** SQLite (for portability and ease of setup)
+- **Frontend:** Blade Templates, Tailwind CSS
+- **Authentication:** Laravel Breeze
+- **Package Managers:** Composer, NPM
 
----
+## Architecture & Language Policy (CRITICAL)
+1. **ENGLISH ONLY:** All code, database tables, columns, models, controllers, variables, and commit messages MUST be strictly in English. No Portuguese remains in the new codebase.
+2. **Structure:** Adhere to standard Laravel conventions:
+    - **Models:** Eloquent models with proper relationships.
+    - **Views:** Blade templates with Tailwind CSS.
+    - **Controllers:** Resource-based controllers for CRUD operations.
+    - **Migrations:** Version-controlled English schema.
+    - **Routes:** Organized web and api routes.
 
-## 🤖 AI Assistant Directives (CRITICAL)
-**Current Stage: Phase 1 - Database Restoration & Stability**
+## Development Conventions
+- **Atomic Commits:** Small, focused commits with clear English descriptions.
+- **Eloquent ORM:** Prefer Eloquent over raw SQL for all database interactions.
+- **SQLite Usage:** Ensure the application remains portable by using SQLite as the primary development database.
+- **Form Requests:** Use dedicated Form Request classes for validation logic.
+- **PSR-12:** Follow PSR-12 coding standards for PHP.
 
-When assisting with this project, the AI (Gemini CLI) MUST strictly adhere to the following rules:
+## Initial Database Schema (Target English Architecture)
+The target schema translates legacy concepts into a normalized English structure:
+- **Base Entities:**
+    - `categories` (formerly `tipo_dieta` / `categoria_prato`)
+    - `promotions` (formerly `promocao`)
+    - `ingredients` (formerly `ingrediente`)
+- **Relational Entities:**
+    - `users` (standard Laravel structure)
+    - `meals` (formerly `prato` - links to categories)
+    - `diets` (links to categories)
+    - `meal_ingredient` (pivot)
+    - `diet_meal` (pivot)
+    - `meal_promotion` (pivot)
 
-1.  **Atomic Changes Only:** Break down tasks into single, manageable features. Only modify the files explicitly requested.
-2.  **NO CODE TRANSLATION (PHASE 1):** Keep all PHP variables, function names, database columns, and file names in their original Portuguese. The logic must remain compatible with the 2016 legacy structure.
-3.  **Language Policy:** * **Code & Logic:** Portuguese (for now).
-    * **Prompts & Documentation:** English.
-    * **Commit Messages:** English.
-4.  **Modernization Policy:** In this step, only update database credentials and ensure connectivity. Do not upgrade to PDO yet unless explicitly commanded.
-
----
-
-## Refactoring Roadmap
-- [x] **Step 1:** Rollback to initial 2016 commit.
-- [x] **Step 2:** Fix database connection logic to work in the local environment (current task).
-- [ ] **Step 3:** Modernize infrastructure using PDO and Prepared Statements (maintaining Portuguese names).
-- [ ] **Step 4:** Full English migration (code, database aliases, and files).
-
-## Refactoring Ledger
-
-### Step 2: Database Restoration
-- **Local Credentials:** Updated `php/geral.php` and `cms/php/geral.php` to use standard local environment settings:
-    - **User:** `root`
-    - **Password:** (empty)
-    - **Database:** `frozenfitness`
+## Next Steps
+- [x] Step 1: Update GEMINI.md directives (Current).
+- [ ] Step 2: Install fresh Laravel project and configure SQLite.
+- [ ] Step 3: Generate target English Migrations and Models.
+- [ ] Step 4: Build custom Seeders to migrate legacy Portuguese data into the new English SQLite structure.
+- [ ] Step 5: Implement Public Area (Controllers & Blade views for Home, Meals, Diets).
+- [ ] Step 6: Implement Admin Dashboard (Breeze & CRUDs).
