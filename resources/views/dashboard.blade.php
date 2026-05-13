@@ -81,7 +81,7 @@
                         <p class="text-gray-500 text-sm mb-8 leading-relaxed">
                             Maintain your base ingredients list and their nutritional values per 100g.
                         </p>
-                        <a href="#" class="inline-flex items-center justify-center w-full py-3 px-4 bg-gray-50 text-gray-700 font-bold rounded-xl hover:bg-orange-600 hover:text-white transition-all duration-200">
+                        <a href="{{ route('ingredients.index') }}" class="inline-flex items-center justify-center w-full py-3 px-4 bg-gray-50 text-gray-700 font-bold rounded-xl hover:bg-orange-600 hover:text-white transition-all duration-200">
                             Manage Ingredients
                         </a>
                     </div>
