@@ -16,6 +16,7 @@ class DatabaseSeeder extends Seeder
             PromotionSeeder::class,
             IngredientSeeder::class,
             MealSeeder::class,
+            DietSeeder::class,
         ]);
     }
 }
