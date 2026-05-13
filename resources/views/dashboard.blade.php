@@ -63,7 +63,7 @@
                         <p class="text-gray-500 text-sm mb-8 leading-relaxed">
                             Organize your products by type, goal, or special dietary requirements.
                         </p>
-                        <a href="#" class="inline-flex items-center justify-center w-full py-3 px-4 bg-gray-50 text-gray-700 font-bold rounded-xl hover:bg-purple-600 hover:text-white transition-all duration-200">
+                        <a href="{{ route('categories.index') }}" class="inline-flex items-center justify-center w-full py-3 px-4 bg-gray-50 text-gray-700 font-bold rounded-xl hover:bg-purple-600 hover:text-white transition-all duration-200">
                             Manage Categories
                         </a>
                     </div>
