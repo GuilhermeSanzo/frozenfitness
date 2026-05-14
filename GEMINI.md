@@ -56,3 +56,7 @@ The target schema translates legacy concepts into a normalized English structure
     - [x] Image support migrated and integrated (Meals & Ingredients).
     - [x] Customer Auth & Roles.
     - [x] Shopping Cart Session Logic.
+- [x] Step 8: Checkout & Orders.
+    - [x] Order & OrderItem Models/Migrations.
+    - [x] Checkout Logic (Session to DB).
+    - [x] Order History View.
