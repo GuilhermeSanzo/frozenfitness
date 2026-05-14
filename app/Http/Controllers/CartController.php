@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Meal;
+use App\Models\Order;
+use App\Models\OrderItem;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class CartController extends Controller
 {
@@ -59,5 +62,41 @@ class CartController extends Controller
         }
 
         return redirect()->back()->with('success', 'Item successfully removed from cart!');
+    }
+
+    public function checkout()
+    {
+        if (!Auth::check()) {
+            return redirect()->route('login')->with('error', 'Please login to complete your order.');
+        }
+
+        $cart = session()->get('cart', []);
+        
+        if (empty($cart)) {
+            return redirect()->route('home')->with('error', 'Your cart is empty.');
+        }
+
+        $total = array_reduce($cart, function ($carry, $item) {
+            return $carry + ($item['price'] * $item['quantity']);
+        }, 0);
+
+        $order = Order::create([
+            'user_id' => Auth::id(),
+            'total_amount' => $total,
+            'status' => 'completed'
+        ]);
+
+        foreach ($cart as $id => $details) {
+            OrderItem::create([
+                'order_id' => $order->id,
+                'meal_id' => $id,
+                'quantity' => $details['quantity'],
+                'unit_price' => $details['price']
+            ]);
+        }
+
+        session()->forget('cart');
+
+        return redirect()->route('orders.index')->with('success', 'Order placed successfully! Thank you for your purchase.');
     }
 }

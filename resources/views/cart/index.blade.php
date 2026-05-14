@@ -70,9 +70,12 @@
                         </div>
                     </div>
 
-                    <button class="w-full bg-green-600 hover:bg-green-500 text-white font-bold py-4 rounded-2xl transition-all shadow-lg shadow-green-900/20 active:scale-[0.98]">
-                        Simulate Checkout
-                    </button>
+                    <form action="{{ route('cart.checkout') }}" method="POST">
+                        @csrf
+                        <button type="submit" class="w-full bg-green-600 hover:bg-green-500 text-white font-bold py-4 rounded-2xl transition-all shadow-lg shadow-green-900/20 active:scale-[0.98]">
+                            Simulate Checkout
+                        </button>
+                    </form>
                     
                     <p class="mt-6 text-center text-gray-500 text-sm">
                         Secured by Laravel Session Logic™

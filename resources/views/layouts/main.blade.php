@@ -33,6 +33,9 @@
                                 </span>
                             @endif
                         </a>
+                        @auth
+                            <a href="{{ route('orders.index') }}" class="text-gray-600 hover:text-green-600 font-medium transition">My Orders</a>
+                        @endauth
                     </div>
 
                     <div class="flex items-center gap-4">
