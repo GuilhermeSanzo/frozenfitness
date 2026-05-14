@@ -39,9 +39,22 @@
                 <div class="flex items-center gap-6 mb-10">
                     <span class="text-5xl font-black text-gray-900">${{ number_format($meal->unit_price, 2) }}</span>
                     <div class="h-10 w-px bg-gray-200"></div>
-                    <button class="bg-green-600 text-white px-10 py-4 rounded-2xl font-bold text-lg hover:bg-green-700 transition shadow-lg hover:shadow-green-200 active:scale-95 duration-200">
-                        Add to Cart
-                    </button>
+                    @if(session()->has('cart.' . $meal->id))
+                        <a href="{{ route('cart.index') }}" class="bg-green-100 text-green-700 px-10 py-4 rounded-2xl font-bold text-lg hover:bg-green-200 transition flex items-center gap-3">
+                            Check Cart
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    @else
+                        <form action="{{ route('cart.add') }}" method="POST">
+                            @csrf
+                            <input type="hidden" name="meal_id" value="{{ $meal->id }}">
+                            <button type="submit" class="bg-green-600 text-white px-10 py-4 rounded-2xl font-bold text-lg hover:bg-green-700 transition shadow-lg hover:shadow-green-200 active:scale-95 duration-200">
+                                Add to Cart
+                            </button>
+                        </form>
+                    @endif
                 </div>
             </div>
 
