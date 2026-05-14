@@ -43,26 +43,39 @@
 
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         @foreach($meals as $meal)
-                            <div class="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm hover:shadow-md transition group">
-                                <div class="flex items-start justify-between mb-4">
-                                    <h4 class="text-lg font-bold text-gray-900 group-hover:text-green-600 transition line-clamp-1">
-                                        <a href="{{ route('meals.show', $meal) }}">{{ $meal->name }}</a>
-                                    </h4>
-                                    <span class="text-xs font-black text-green-600 bg-green-50 px-2 py-1 rounded">
+                            <div class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-md transition group">
+                                <a href="{{ route('meals.show', $meal) }}" class="block h-32 bg-gray-100 relative overflow-hidden">
+                                    @if($meal->image_path)
+                                        <img src="{{ asset($meal->image_path) }}" alt="{{ $meal->name }}" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                                    @else
+                                        <div class="w-full h-full flex items-center justify-center text-gray-300 italic text-xs">
+                                            No Image
+                                        </div>
+                                    @endif
+                                    <div class="absolute top-2 right-2 bg-white/90 backdrop-blur px-2 py-0.5 rounded-lg text-[10px] font-black text-green-700 shadow-sm">
                                         {{ $meal->total_kcal }} kcal
-                                    </span>
-                                </div>
+                                    </div>
+                                </a>
+                                <div class="p-6">
+                                    <div class="flex items-start justify-between mb-4">
+                                        <h4 class="text-lg font-bold text-gray-900 group-hover:text-green-600 transition line-clamp-1">
+                                            <a href="{{ route('meals.show', $meal) }}">{{ $meal->name }}</a>
+                                        </h4>
+                                    </div>
                                 <p class="text-sm text-gray-500 line-clamp-2 mb-6">
                                     {{ $meal->description }}
                                 </p>
                                 <div class="flex flex-wrap gap-2 mb-6">
                                     @foreach($meal->ingredients->take(3) as $ingredient)
-                                        <span class="text-[10px] font-bold uppercase tracking-tighter text-gray-400 bg-gray-50 px-2 py-1 rounded">
+                                        <span class="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-tighter text-gray-500 bg-gray-50 px-2 py-1 rounded-lg border border-gray-100">
+                                            @if($ingredient->image_path)
+                                                <img src="{{ asset($ingredient->image_path) }}" alt="" class="w-3 h-3 rounded-full object-cover">
+                                            @endif
                                             {{ $ingredient->name }}
                                         </span>
                                     @endforeach
                                     @if($meal->ingredients->count() > 3)
-                                        <span class="text-[10px] font-bold uppercase tracking-tighter text-gray-400 bg-gray-50 px-2 py-1 rounded">
+                                        <span class="text-[10px] font-bold uppercase tracking-tighter text-gray-400 bg-gray-50 px-2 py-1 rounded-lg">
                                             +{{ $meal->ingredients->count() - 3 }} more
                                         </span>
                                     @endif

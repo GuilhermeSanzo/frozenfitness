@@ -13,11 +13,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             AdminSeeder::class,
-            CategorySeeder::class,
-            PromotionSeeder::class,
-            IngredientSeeder::class,
-            MealSeeder::class,
-            DietSeeder::class,
+            LegacyDataSeeder::class,
         ]);
     }
 }

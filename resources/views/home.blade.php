@@ -28,7 +28,7 @@
                         <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 group">
                             <a href="{{ route('meals.show', $meal) }}" class="block h-56 bg-gray-200 relative overflow-hidden">
                                 @if($meal->image_path)
-                                    <img src="{{ $meal->image_path }}" alt="{{ $meal->name }}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                                    <img src="{{ asset($meal->image_path) }}" alt="{{ $meal->name }}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                                 @else
                                     <div class="w-full h-full flex items-center justify-center text-gray-400 italic">
                                         No Image Available
