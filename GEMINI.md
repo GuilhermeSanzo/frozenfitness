@@ -54,3 +54,4 @@ The target schema translates legacy concepts into a normalized English structure
 - [x] Step 7: The E-commerce Core.
     - [x] Legacy Data Migrated via Seeder.
     - [x] Image support migrated and integrated (Meals & Ingredients).
+    - [x] Customer Auth & Roles.
