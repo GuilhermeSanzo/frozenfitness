@@ -12,13 +12,12 @@ Route::get('/meals/{meal}', [MealController::class, 'show'])->name('meals.show')
 Route::get('/diets', [DietController::class, 'index'])->name('diets.index');
 Route::get('/diets/{diet}', [DietController::class, 'show'])->name('diets.show');
 
-// Auth Dashboard
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
-
 // Admin Routes
-Route::middleware(['auth', 'verified'])->group(function () {
+Route::middleware(['auth', 'verified', \App\Http\Middleware\AdminMiddleware::class])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+
     Route::resource('admin/categories', \App\Http\Controllers\Admin\CategoryController::class)
         ->names([
             'index' => 'categories.index',

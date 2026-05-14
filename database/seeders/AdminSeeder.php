@@ -17,6 +17,7 @@ class AdminSeeder extends Seeder
             'name' => 'Admin',
             'email' => 'admin@frozenfitness.com',
             'password' => Hash::make('password'),
+            'is_admin' => true,
         ]);
     }
 }

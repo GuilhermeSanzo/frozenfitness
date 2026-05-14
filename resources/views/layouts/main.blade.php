@@ -24,9 +24,22 @@
                     <a href="{{ route('home') }}#catalog" class="text-gray-600 hover:text-green-600 font-medium transition">Meals</a>
                     <a href="{{ route('diets.index') }}" class="text-gray-600 hover:text-green-600 font-medium transition">Diets</a>
                     @auth
-                        <a href="{{ route('dashboard') }}" class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition font-semibold">Dashboard</a>
+                        @if(auth()->user()->is_admin)
+                            <a href="{{ route('dashboard') }}" class="text-green-600 hover:text-green-700 font-bold transition">Admin Hub</a>
+                        @endif
+                        
+                        <div class="flex items-center gap-4">
+                            <span class="text-gray-500 text-sm">Hi, <span class="font-semibold text-gray-800">{{ auth()->user()->name }}</span></span>
+                            <form method="POST" action="{{ route('logout') }}">
+                                @csrf
+                                <button type="submit" class="text-gray-500 hover:text-red-600 font-medium transition text-sm">Logout</button>
+                            </form>
+                        </div>
                     @else
-                        <a href="{{ route('login') }}" class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition font-semibold">Login</a>
+                        <div class="flex items-center gap-4">
+                            <a href="{{ route('login') }}" class="text-gray-600 hover:text-green-600 font-medium transition">Login</a>
+                            <a href="{{ route('register') }}" class="bg-green-600 text-white px-5 py-2 rounded-xl hover:bg-green-700 transition font-bold shadow-sm">Register</a>
+                        </div>
                     @endauth
                 </div>
             </div>
