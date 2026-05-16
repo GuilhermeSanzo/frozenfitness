@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frozen Fitness - Healthy Gourmet</title>
+    <title>FrozenFitness</title>
+    <link rel="icon" href="{{ asset('img/logo.png') }}" type="image/png">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
@@ -15,8 +16,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center">
-                    <a href="{{ route('home') }}" class="text-2xl font-bold text-green-600 tracking-tight">
-                        Frozen <span class="text-gray-800">Fitness</span>
+                    <a href="{{ route('home') }}">
+                        <img src="{{ asset('img/logo.png') }}" alt="FrozenFitness Logo" class="w-10 h-auto">
                     </a>
                 </div>
                 
