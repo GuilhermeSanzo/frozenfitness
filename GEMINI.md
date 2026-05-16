@@ -60,3 +60,5 @@ The target schema translates legacy concepts into a normalized English structure
     - [x] Order & OrderItem Models/Migrations.
     - [x] Checkout Logic (Session to DB).
     - [x] Order History View.
+- [x] Step 9: UI/UX Refinement.
+    - [x] Integrate global Logo and Favicon.
