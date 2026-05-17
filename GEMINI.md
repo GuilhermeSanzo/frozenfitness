@@ -39,6 +39,9 @@ The target schema translates legacy concepts into a normalized English structure
     - `diet_meal` (pivot)
     - `meal_promotion` (pivot)
 
+## UI Standardization
+- [x] Standardize global typography and add portfolio footer link
+
 ## Next Steps
 - [x] Step 1: Update GEMINI.md directives (Current).
 - [x] Step 2: Install fresh Laravel project and configure SQLite.
