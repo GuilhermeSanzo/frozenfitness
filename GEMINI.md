@@ -40,7 +40,7 @@ The target schema translates legacy concepts into a normalized English structure
     - `meal_promotion` (pivot)
 
 ## UI Standardization
-- [x] Standardize global typography and add portfolio footer link
+- [x] Standardize global typography and consolidate refined portfolio footer link into the main dark footer
 
 ## Next Steps
 - [x] Step 1: Update GEMINI.md directives (Current).
